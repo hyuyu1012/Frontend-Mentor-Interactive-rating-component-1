@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+  --Orange-500: hsl(25, 97%, 53%);
+  --White: hsl(0, 100%, 100%);
+  --Grey-500: 217, 12%, 63%;
+  --Grey-900: hsl(213, 19%, 18%);
+  --Grey-950: hsl(216, 12%, 8%); 
+}
+
+html, body {
+  width: 100vw;
+  height : 100vh;
+  background-color: var(--Grey-950);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+*{
+  box-sizing: border-box;
+  color: var(--White);
+  font-family: "Overpass";
+}
+
+.card {
+  background-color: var(--Grey-900);
+  width: 24rem;
+  padding: 2rem;
+  border-radius: 7%;
+}
+
+.rating-card {
+  display: block;
+}
+
+.rating-card > .icon-circle {
+  background-color: hsla(var(--Grey-500), 0.2);
+  
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.rating-card > h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.rating-card > p {
+  opacity: 0.5;
+  font-weight: 200;
+  font-size: 0.93rem;
+  line-height: 1.4rem;
+}
+
+.rating-card > .button-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.rating {
+  background-color: hsla(var(--Grey-500), 0.2);
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.submit{
+  background-color: var(--Orange-500);
+  border-radius: 20px;
+  color: var(--Grey-950);
+  font-size: 0.85rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  width: 100%;
+  padding: 0.7rem 0;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+
+.clicked{
+  background-color: var(--White);
+  opacity: 1;
+  color: black;
+}
+
+.hover{
+  background-color: var(--Orange-500);
+  opacity: 1;
+  color: black;
+}
+.submit-hover{
+  background-color: var(--White);
+  color: black;
+}
+
+.thanks-card {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height : 328.734px;
+}
+
+.thanks-card > img {
+  margin-top: 0.4rem;
+  margin-bottom: 1.8rem;
+}
+
+.thanks-card >.result {
+  padding: 0.5rem 1.3rem;
+  border-radius: 1rem;
+  background-color: hsla(var(--Grey-500), 0.1);
+  opacity: 0.7;
+
+  color: var(--Orange-500);
+  font-size: 0.9rem;
+  margin-bottom: 0.9rem;
+}
+
+#output {
+  color: var(--Orange-500);
+  font-size: 0.9rem;
+}
+
+.thanks-card > h2 {
+  margin-bottom: 0;
+  font-size: 1.7rem;
+}
+.thanks-card  > p {
+  margin-top: 0.4rem;
+  font-size: 0.88rem;
+  line-height: 1.4rem;
+  opacity: 0.7; 
+}
+
